@@ -11,7 +11,6 @@ def numbers_to_text(numbers):
 
 def matrix_mod_inverse(matrix, modulus=26):
     """Mencari invers matriks modulo 26 (khusus 2x2)."""
-    # Hitung determinan 2x2 secara manual agar presisi integer terjaga
     det = int(matrix[0, 0] * matrix[1, 1] - matrix[0, 1] * matrix[1, 0])
     det_element = det % modulus
     
